@@ -15,7 +15,10 @@
     }
 } 
 /* Tablet and Mobile */ 
-@media only screen and  (max-width: 1023px) { 
+@media only screen and  (max-width: 1023px) {  
+    .home-video { 
+        display: none;
+    }
     section.home .news-football-sub,
     section.home .news-football-main{ 
         margin-bottom: 8px;
@@ -93,9 +96,6 @@ section.home .manager-container__body {
         height: 460px; 
         flex-direction: row;
     }  
-    .home-video-mobile { 
-        display: none;
-    } 
     .header__nav {  
         display: none;
     }  
@@ -170,9 +170,6 @@ section.home .manager-container__body {
 }
 /* Mobile */
 @media only screen and (max-width: 739px) {  
-    .home-video { 
-        display: none;
-    }
     .header__nav {  
         display: none;
     }  
