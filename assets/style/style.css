@@ -314,7 +314,7 @@
 } 
 .home .manager-container{ 
     width: 100%;
-    background-image: url('https://github.com/baolinh-dev/vietnam-football/blob/main/assets/img/background-manager.png?raw=true'); 
+    background-image: url('../img/background-manager.png'); 
     padding-top: 5%;  
     background-repeat: no-repeat;  
     background-position: bottom center;
@@ -517,7 +517,7 @@
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    background-image: url('https://github.com/baolinh-dev/vietnam-football/blob/main/assets/img/background-feature.jpg?raw=true'); 
+    background-image: url('../img/background-feature.jpg'); 
     padding: 40px 102px; 
     overflow: hidden; 
     background-repeat: no-repeat; 
@@ -615,7 +615,7 @@ display: flex;
 }  
 /* Slider */
 .squad .slider { 
-    background-image: url('/assets/img/slider-vn-fball.jpg');  
+    background-image: url('../img/slider-vn-fball.jpg');  
     height: calc(100vh - var(--height-header-value)); 
     background-size: cover;  
     background-repeat: no-repeat; 
@@ -638,16 +638,16 @@ display: flex;
     position: relative;
 } 
 .squad .team-introduce--men {
-    background-image: url('/assets/img/first-team-men-introduce.jpg'); 
+    background-image: url('../img/first-team-men-introduce.jpg'); 
 }
 .squad .team-introduce--women {
-    background-image: url('/assets/img/first-team-women-introduce.jpg'); 
+    background-image: url('../img/first-team-women-introduce.jpg'); 
 }
 .squad .team-introduce--young {
-    background-image: url('/assets/img/young-men-introduce.jpg'); 
+    background-image: url('../img/young-men-introduce.jpg'); 
 }
 .squad .team-introduce--legend {
-    background-image: url('/assets/img/legend-introduce.jpg'); 
+    background-image: url('../img/legend-introduce.jpg'); 
 }
 .squad .team-introduce__content{
     position: absolute; 
@@ -1194,7 +1194,7 @@ border-radius: 10px;
     justify-content: center;  
     align-items: center;
     width: 100%;
-    background-image: url('/assets/img/stadium-background.png');
+    background-image: url('../img/stadium-background.png');
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover; 
