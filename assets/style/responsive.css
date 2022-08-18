@@ -1,0 +1,420 @@
+/* PC */
+@media only screen and (min-width: 1024px) { 
+    .header__mobile-nav { 
+        display: none;
+    } 
+    .header__nav-mobile-list { 
+        display: none;
+    } 
+    section.news .news-football-full-screen {
+        height: 460px; 
+        flex-direction: row;
+    }  
+    .home-video-mobile { 
+        display: none;
+    }
+} 
+/* Tablet and Mobile */ 
+@media only screen and  (max-width: 1023px) { 
+    section.home .news-football-sub,
+    section.home .news-football-main{ 
+        margin-bottom: 8px;
+    } 
+section.home .manager-container__body { 
+        width: unset; 
+        padding: 0 32px; 
+        position: relative;
+    }    
+
+    .home .manager-infor .manager-heading {  
+        margin-bottom: 40px;
+    }
+    .home .manager-infor .manager-infor__name { 
+        margin-bottom: 16px;
+    }
+    .home .manager-infor .manager-infor__quote {  
+        width: 140px;
+    } 
+    .manager-image { 
+        width: 40%;  
+        height: 360px; 
+        position: absolute; 
+        bottom: 0; 
+        left: 50%; 
+        transform: translateX(-25%);
+    }   
+    section.news .news-football-sub { 
+        margin-bottom: 8px;
+    }   
+    
+}
+/* Tablet */
+@media only screen and (min-width: 740px) and  (max-width: 1023px) {  
+    .header__nav-mobile-btn__squad:checked 
+    ~ .header__nav-mobile-list__squad{
+        display: block; 
+        color: red;
+    }
+    .header__nav-mobile-list__squad{
+        padding-left: 40px;  
+        list-style: none; 
+        display: none;
+    }
+    .header__nav-mobile-item__squad{
+        position: relative;
+    } 
+    .header__nav-mobile-item__link__squad::after{
+        content: ""; 
+        display: block; 
+        position: absolute; 
+        left: 0;  
+        top: 20px;
+        width: 8px; 
+        height: 8px; 
+        border-radius: 50%; 
+        background-color: #fff; 
+    }
+    .header__nav-mobile-item__link__squad{
+        display: block;
+        font-size: 1.8rem; 
+        color: var(--white-color);  
+        text-decoration: none; 
+        padding: 12px 20px; 
+        text-transform: uppercase; 
+        font-weight: 600;
+    } 
+    .header__mobile-nav { 
+        display: block;
+    } 
+    .header__nav-mobile-list { 
+        display: none;
+    }  
+    section.news .news-football-full-screen {
+        height: 460px; 
+        flex-direction: row;
+    }  
+    .home-video-mobile { 
+        display: none;
+    } 
+    .header__nav {  
+        display: none;
+    }  
+    .header__nav-mobile-btn-wrap { 
+
+    } 
+    .header__mobile-nav { 
+        transform: translateY(-2px);
+    }
+    .header__nav-mobile-btn:not(:checked) ~ .header__nav-mobile-list{ 
+            transform: translateX(-100%); 
+            transition: all 0.3s linear;
+    }  
+    .header__nav-mobile-btn:checked ~ .header__nav-mobile-list{ 
+            transform: translateX(0); 
+            transition: all 0.3s linear;
+    } 
+    .header__nav-mobile-list{ 
+        background-color: var(--main-color); 
+        position: fixed; 
+        top: var(--height-header-value);
+        left: 0; 
+        right: 0;  
+        bottom: 0;
+        width: 100%;  
+        display: block; 
+        transform: translateX(-100%);  
+        filter: brightness(80%); 
+        list-style: none; 
+        padding: 24px 8px 8px 8px;
+    } 
+    .header__nav-mobile-list--close{
+        position: absolute; 
+        right: 8px;  
+        top: 8px; 
+        color: var(--white-color); 
+        font-size: 2rem; 
+        padding: 12px; 
+        display: -webkit-box; 
+        -webkit-tap-highlight-color: transparent;
+    }
+    .header__nav-mobile-item{
+             border-bottom: 1px solid #ddd;     
+    }
+    .header__nav-mobile-item__link{ 
+        display: block;
+        font-size: 2rem;  
+        color: var(--white-color); 
+        text-decoration: none; 
+        padding: 16px;  
+        text-transform: uppercase; 
+        -webkit-tap-highlight-color: transparent;
+        width: 100%; 
+        font-weight: bolder;
+    }  
+    section.home .shopping-item-img-wrap { 
+        margin-bottom: 28px;
+    } 
+    section.squad .slider {   
+        background-size: contain;  
+        height: 424px;
+    }     
+    section.shop .shopping-item-img-wrap {   
+        height: 333px;
+    } 
+    section.ticket .match-box__body { 
+        padding: 0 48px;
+    } 
+    section.ticket .match-item__main-heading { 
+        font-size: 1.8rem;
+    }
+}
+/* Mobile */
+@media only screen and (max-width: 739px) {  
+    .home-video { 
+        display: none;
+    }
+    .header__nav {  
+        display: none;
+    }  
+    .header__nav-mobile-btn-wrap { 
+
+    } 
+    .header__mobile-nav { 
+        transform: translateY(-2px);
+    }
+    .header__nav-mobile-btn:not(:checked) ~ .header__nav-mobile-list{ 
+            transform: translateX(-100%); 
+            transition: all 0.3s linear;
+    }  
+    .header__nav-mobile-btn:checked ~ .header__nav-mobile-list{ 
+            transform: translateX(0); 
+            transition: all 0.3s linear;
+    } 
+    .header__nav-mobile-list{ 
+        background-color: var(--main-color); 
+        position: fixed; 
+        top: var(--height-header-value);
+        left: 0; 
+        right: 0;  
+        bottom: 0;
+        width: 100%;  
+        display: block; 
+        transform: translateX(-100%);  
+        filter: brightness(80%); 
+        list-style: none; 
+        padding: 24px 8px 8px 8px;
+    } 
+    .header__nav-mobile-list--close{
+        position: absolute; 
+        right: 8px;  
+        top: 8px; 
+        color: var(--white-color); 
+        font-size: 3rem; 
+        padding: 12px; 
+        display: -webkit-box; 
+        -webkit-tap-highlight-color: transparent;
+    }
+    .header__nav-mobile-item{
+             border-bottom: 1px solid #ddd;     
+    }
+    .header__nav-mobile-item__link{ 
+        display: block;
+        font-size: 2rem;  
+        color: var(--white-color); 
+        text-decoration: none; 
+        padding: 16px;  
+        text-transform: uppercase; 
+        -webkit-tap-highlight-color: transparent;
+        width: 100%; 
+        font-weight: bolder;
+    } 
+    .footer__socials-icon {
+        margin-left: 10px;
+    } 
+    .footer__donate-img { 
+        padding: 0;
+        width: 36px;
+        height: 24px;
+        padding: 0 4px;
+    } 
+    .home .home-video-wrap  { 
+
+    } 
+    .home .home-video { 
+
+    } 
+    .home .match-flag .match-flag-img {
+        width: 52px;
+        height: 32px;
+        border: 1px solid #ddd;
+    }  
+    .home .match-btn-list .match-btn { 
+        min-width: unset;
+    }  
+    .home .match-heading-container .match-heading { 
+        line-height: 3rem; 
+        font-size: 2.6rem;
+    } 
+    .home .countdown-container .time-unit {
+        margin: 0 4px;
+    }  
+    .home .match-calender {
+        padding: 92px 22px !important;
+    } 
+    section.squad .slider {   
+        background-size: contain; 
+        height: 240px;
+    } 
+    section.squad .team-introduce { 
+        height: 40vh;
+    }  
+    section.squad .team-introduce__heading { 
+        font-size: 2rem; 
+        line-height: 0rem;
+    } 
+    section.squad .team-introduce__content { 
+        left: 20px;  
+        right: 20px;
+        bottom: 20px;
+    } 
+    section.squad .team-introduce__button  {  
+        width: 100%; 
+        display: block; 
+        min-height: unset; 
+        line-height: unset; 
+        padding: 8px; 
+        margin-top: 28px;
+    }
+    section.squad-detail .possition-item__img-wrap { 
+        width: 100%;
+    } 
+    section.squad-detail .possition-item__img { 
+        width: 100%;
+    } 
+    section.squad-detail .possition-item {
+        padding: 0;
+    } 
+    section.squad-detail {  
+        margin-top: var(--height-header-value);
+    }    
+    .header__sub-icon { 
+        font-size: 2.4rem;
+    }
+    .header__nav-mobile-btn__squad:checked 
+    ~ .header__nav-mobile-list__squad{
+        display: block; 
+        color: red;
+    }
+    .header__nav-mobile-list__squad{
+        padding-left: 40px;  
+        list-style: none; 
+        display: none;
+    }
+    .header__nav-mobile-item__squad{
+        position: relative;
+    } 
+    .header__nav-mobile-item__link__squad::after{
+        content: ""; 
+        display: block; 
+        position: absolute; 
+        left: 0;  
+        top: 20px;
+        width: 8px; 
+        height: 8px; 
+        border-radius: 50%; 
+        background-color: #fff; 
+    }
+    .header__nav-mobile-item__link__squad{
+        display: block;
+        font-size: 1.8rem; 
+        color: var(--white-color);  
+        text-decoration: none; 
+        padding: 12px 20px; 
+        text-transform: uppercase; 
+        font-weight: 600;
+    } 
+    section.news .news-football-full-screen {
+        height: 460px; 
+        flex-direction: column;
+    }  
+    section.home .shopping-item-img-wrap,
+    section.shop .shopping-item-img-wrap { 
+        height: 180px;
+    }  
+    section.home .shopping-item__infor-name,
+    section.shop .shopping-item__infor-name {  
+        max-height: unset; 
+        overflow: unset; 
+        line-height: 1.8rem;
+    }    
+    section.shop .shopping-item__infor-name {  
+        margin-bottom: 2px;
+    } 
+    section.home .shopping-item__infor-price,
+    section.shop .shopping-item__infor-price { 
+        font-size: 1.8rem; 
+        margin-bottom: 8px;
+    }    
+    .shop .shop__sort-wrap { 
+        margin-bottom: 8px;
+    }
+    section.shop .shop__sort { 
+        flex-direction: column;
+    }    
+    section.shop .shop__sort-product-label,
+    section.shop .shop__sort-by-label { 
+        font-size: 1.8rem;
+    } 
+    section.shop .shop__sort-by-options,
+    section.shop .shop__sort-product-options {     
+        min-width: 60px; 
+    }  
+
+    section.ticket .match-box__body {   
+        min-width: unset;
+    }
+    section.ticket .match-flag-img {  
+      
+        width: 100px;  
+        height: 75px;
+    } 
+    section.ticket .match-infor {  
+        padding: 8px;
+    }  
+    section.ticket .match-sponsor { 
+        width: 75px;
+    } 
+    section.ticket .match-time { 
+        font-size: 5rem;
+    } 
+    section.ticket .match-item { 
+        flex-direction: column; 
+        align-items: flex-start;
+    }  
+    section.ticket .match-item__main {
+        margin-bottom: 8px;
+    }   
+    section.ticket .match-item__main-infor { 
+        flex-direction: column; 
+        align-items: center;
+    } 
+    section.ticket .match-item__main-infor-icon {
+        transform: translateX(-8px);  
+        font-size: 1.8rem;
+    } 
+    section.ticket .match-item__main-content { 
+            align-items: center;
+    } 
+    section.ticket .match-item__main-content-sponsor { 
+        width: 50px;
+    } 
+    section.ticket .match-category-item{
+        margin-bottom: 12px;
+    } 
+    section.contact { 
+        padding: 0 20px;
+    }
+    html { 
+          font-size: 50%;
+    } 
+}

@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/x-icon" href="./assets/img/vietnam-flag-logo.png">       
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Slick --> 
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <!-- Slick -->  
+    <!-- Shopping cart -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+     <!-- Shopping cart -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css" integrity="sha512-8zKdCtHHn4yrmrAKteDmaIVUMppsWMTlaZCffpRG6k6sVHwWQ2kiJOFQ22e7dSPc7yYD/GC5onkJCfxemQsyeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="./assets/style/grid.css">
+    <link rel="stylesheet" href="./assets/style/base.css"> 
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>Shop</title>
+</head>
+<body>
+    <div class="header"> 
+        <div class="header__nav-wrap"> 
+            <a href="index.html" class="header__nav-logo-link"> 
+                <img class="header__nav-logo"  src="./assets/img/logo-vn.png" alt=""> 
+            </a>
+            <ul class="header__nav">    
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="squad.html" class="header__nav-link">VN Squad</a>  
+                    <div class="line-up-wrap">
+                        <ul class="line-up"> 
+                            <li class="line-up__item">
+                                <a href="squad-detail-men.html" class="line-up__item-link">Men</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-women.html" class="line-up__item-link">Women</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-young.html" class="line-up__item-link">Young</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-legend.html" class="line-up__item-link">Lengend</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> 
+                <li class="header__nav-item">
+                    <a href="news.html" class="header__nav-link">NEWS</a>
+                </li>
+                <li class="header__nav-item common-bottom-border-header">
+                    <a href="shop.html" class="header__nav-link">SHOP</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="ticket.html" class="header__nav-link">TICKETS</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__sub">     
+            <a class="header__sub-link" href=""> 
+                <i class="header__sub-icon fa-solid fa-magnifying-glass"></i> 
+            </a> 
+            <a class="header__sub-link" href="">  
+                <i class="header__sub-icon fa-solid fa-cart-shopping"></i>
+            </a> 
+            <a class="header__sub-link" href=""> 
+                <i class="header__sub-icon far fa-user"></i>
+            </a> 
+            <label class="header__sub-icon header__mobile-nav fa-solid fa-list-ul" for="toggle-nav-mobile"></label>  
+            <input hidden type="checkbox" id="toggle-nav-mobile" class=" header__nav-mobile-btn"> 
+            
+            <ul class="header__nav-mobile-list close-animate-nav">
+                <li class="header__nav-mobile-item">
+                    <a href="index.html" class="header__nav-mobile-item__link">Home</a>
+                </li>
+                <li class="header__nav-mobile-item"> 
+                    <label for="toggle-nav-mobile__squad" class="header__nav-mobile-item__link">  
+                        squads
+                    </label> 
+                    <input hidden type="checkbox" id="toggle-nav-mobile__squad" class="header__nav-mobile-btn__squad"> 
+                    <ul class="header__nav-mobile-list__squad">
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad.html" class="header__nav-mobile-item__link__squad"> 
+                                VN Squads
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-men.html" class="header__nav-mobile-item__link__squad"> 
+                                Men
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-women.html" class="header__nav-mobile-item__link__squad"> 
+                                Women
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-young.html" class="header__nav-mobile-item__link__squad"> 
+                                Young
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-legend.html" class="header__nav-mobile-item__link__squad"> 
+                                Lengend
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-mobile-item">
+                    <a href="news.html" class="header__nav-mobile-item__link">news</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="shop.html" class="header__nav-mobile-item__link">shop</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="ticket.html" class="header__nav-mobile-item__link">tickets</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="contact.html" class="header__nav-mobile-item__link">contact</a>
+                </li>   
+                <i class=""></i>
+                <label for="toggle-nav-mobile" class="header__nav-mobile-list--close fa-solid fa-xmark"></label>
+            </ul> 
+        </div>
+    </div>  
+    <section class="shop"> 
+        <div class="container">
+            <div class="shop__sort"> 
+                <div class="shop__sort-wrap">
+                    <form action="" class="shop__sort-by">
+                        <label class="shop__sort-by-label">Sort by:</label>
+                        <select class="shop__sort-by-options">
+                            <option class="shop__sort-by-options-item" value="price">Price</option>
+                            <option class="shop__sort-by-options-item" value="popularity">Popularity</option>
+                            <option class="shop__sort-by-options-item" value="rating">Rating</option>
+                        </select>
+                    </form>
+                    <form action="" class="shop__sort-product">
+                        <label class="shop__sort-product-label">Product:</label>
+                        <select class="shop__sort-product-options">
+                            <option class="shop__sort-product-options-item" value="16">16</option>
+                            <option class="shop__sort-product-options-item" value="24">24</option>
+                            <option class="shop__sort-product-options-item" value="36">36</option>
+                        </select>
+                    </form>  
+                    <p class="shop__result">16 from 200</p> 
+                </div>
+                <ul class="shop__panigation">
+                    <li class="shop__panigation-item"> 
+                        <a class="shop__panigation-item-link" href="">   
+                            <i class="fa-solid fa-angle-left"></i>
+                        </a>
+                        <a class="shop__panigation-item-link" href="">   
+                            1
+                        </a>
+                        <a class="shop__panigation-item-link" href="">   
+                            ...
+                        </a>
+                        <a class="shop__panigation-item-link" href="">   
+                            24
+                        </a>
+                        <a class="shop__panigation-item-link" href="">   
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div> 
+            <div class="shop__main mt-5 mb-5">
+                <div class="row">
+                    <div class="col-lg-3 col-12 mb-5"> 
+                        <div class="filter-bar"> 
+                            <div class="filter-bar__heading">
+                                <div class="filter-bar__btn-wrap">
+                                    <button class="filter-bar__btn">Reset</button>
+                                    <button class="filter-bar__btn active">Apply</button>
+                                </div>
+                            </div> 
+                            <form class="form-filter"> 
+                                <div class="form-filter__heading">Product Quality</div> 
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">New</label> <br>
+                                <input type="checkbox" class="input-filter" id="sale" checked> 
+                                <label for="sale" class="filter-label">Sale</label>
+                            </form>
+                            <form class="form-filter"> 
+                                <div class="form-filter__heading">FEATURED DEPARTMENTS</div> 
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">Face cover</label> <br>
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">Scarves</label> <br>
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">Training</label> <br>
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">Sale Items</label> <br>
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">jacket</label> <br>
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">football wear</label> <br>
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">head wear</label> <br>
+                                <input type="checkbox" class="input-filter" id="sale" checked> 
+                                <label for="sale" class="filter-label">prenium gilfs</label>
+                            </form>
+                            <form class="form-filter"> 
+                                <div class="form-filter__heading">KITS TYPE</div> 
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">Home</label> <br>
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">Away</label> <br>
+                                <input type="checkbox" class="input-filter" id="new">  
+                                <label for="new" class="filter-label">Third</label> <br>
+                                <input type="checkbox" class="input-filter" id="sale" checked> 
+                                <label for="sale" class="filter-label">Goal Keeper</label>
+                            </form>
+                            <form class="form-filter"> 
+                                <div class="form-filter__heading">Price</div> 
+<input type="range" class="form-range full-width" id="customRange1" min="0" max="5" step="0.5"> 
+<div class="form-filter__price-limit">
+    <p class="price-limit__max">$10.00</p>
+    <p class="price-limit__min">$500.00</p>
+</div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-9"> 
+            <section class="shopping">
+                <div class="shopping__list">
+                    <div class="row shopping__list-item">
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-1-back.png" alt="">
+                                    <img src="./assets/img/shirt-1-front.png" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 day
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-2-back.png" alt="">
+                                    <img src="./assets/img/shirt-2-front.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-5-back.jpg" alt="">
+                                    <img src="./assets/img/shirt-5-front-2.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6"> 
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-6-back.jpg" alt="">
+                                    <img src="./assets/img/shirt-6-front.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                    <div class="row shopping__list-item">
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/bag_2.jpg" alt="">
+                                    <img src="./assets/img/bag_1.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 day
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/bag_2_black.jpg" alt="">
+                                    <img src="./assets/img/bag_1_black.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap shopping-item-img-wrap--small">
+                                    <img src="./assets/img/ball_2_blue.jpg" alt="">
+                                    <img src="./assets/img/ball_1_blue.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6"> 
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/ball_2_white.jpg" alt="">
+                                    <img src="./assets/img/ball_1_white.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                    <div class="row shopping__list-item">
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/jacket_2.jpg" alt="">
+                                    <img src="./assets/img/jacket_1.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 day
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/short_2.jpg" alt="">
+                                    <img src="./assets/img/short_1.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/shirt-3-back.png" alt="">
+                                    <img src="./assets/img/shirt-3-front.png" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6"> 
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/short_2_away.jpg" alt="">
+                                    <img src="./assets/img/short_1_away.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                    <div class="row shopping__list-item">
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/short_2_third.jpg" alt="">
+                                    <img src="./assets/img/short_1_third.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 day
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/third_2_bl.jpg" alt="">
+                                    <img src="./assets/img/third_1_bl.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6">  
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/socks_2.jpg" alt="">
+                                    <img src="./assets/img/socks_1.jpg" alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div> 
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <div class="col-lg-3 col-6"> 
+                            <div class="shopping-item">
+                                <div class="shopping-item-img-wrap">
+                                    <img src="./assets/img/socks_2_black.jpg
+                                    " alt="">
+                                    <img src="./assets/img/socks_1_black.jpg
+                                    " alt=""> 
+                                </div>
+                                <div class="shopping-item__infor">
+                                    <h3 class="shopping-item__infor-name"> 
+                                        VIETNAM Home Shirt 2021-22 
+                                    </h3> 
+                                    <p class="shopping-item__infor-price">
+                                        $32.00
+                                    </p>
+                                </div>  
+                                <div class="shopping__option"> 
+                                    <div class="shopping__option-icon-wrap">
+                                        <i class="shopping__option-icon fa-regular fa-heart"></i>    
+                                    </div> 
+                                    <div class="shopping__option-icon-wrap"> 
+                                        <i class="shopping__option-icon material-symbols-outlined">
+                                        shopping_cart</i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>   
+                    </div>
+                </div>
+            </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <div class="footer">
+        <div class="footer__socials">
+            <img class="header__nav-logo"  src="./assets/img/logo-vn.png" alt="">    
+            <div class="footer__socials-icon-list">
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div> 
+
+        </div> 
+        <div class="footer__donate">   
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/adidas.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/acecook.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Herbalife-Logo.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/honda.png" alt="">
+            </div>
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/grandsport.jpg" alt="">
+                <img class="footer__donate-img" src="./assets/img/hungthinhcorporation.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/hungthinhland.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/kingcoffe-logo.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/viethan.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/vinamilk.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/yamaha.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/vingroup.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/cadbury.png" alt="">
+            </div>
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/canon.jpg" alt="">
+                <img class="footer__donate-img" src="./assets/img/casillero.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/marriott.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/MauiGim.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/melitta.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Mlily.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/tag.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Visitmalta.png" alt="">
+            </div>
+        </div> 
+        <h3 class="footer__copyright">VIETNAM © 2022 ALL RIGHTS RESERVED</h3>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="./assets/slick/slick.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>

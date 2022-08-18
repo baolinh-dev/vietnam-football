@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/x-icon" href="./assets/img/vietnam-flag-logo.png">    
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css" integrity="sha512-8zKdCtHHn4yrmrAKteDmaIVUMppsWMTlaZCffpRG6k6sVHwWQ2kiJOFQ22e7dSPc7yYD/GC5onkJCfxemQsyeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/style/base.css"> 
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>First Men</title>
+</head>
+<body>
+    <div class="header"> 
+        <div class="header__nav-wrap">
+            <a href="index.html" class="header__nav-logo-link"> 
+                <img class="header__nav-logo"  src="./assets/img/logo-vn.png" alt=""> 
+            </a> 
+            <ul class="header__nav">  
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                </li>
+                <li class="header__nav-item common-bottom-border-header">
+                    <a href="squad.html" class="header__nav-link">VN Squad</a>  
+                    <div class="line-up-wrap appear">
+                        <ul class="line-up">
+                            <li class="line-up__item common-bottom-border-header--main-color">
+                                <a href="squad-detail-men.html" class="line-up__item-link">Men</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-women.html" class="line-up__item-link">Women</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-young.html" class="line-up__item-link">Young</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-legend.html" class="line-up__item-link">Lengend</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="header__nav-item">
+                    <a href="news.html" class="header__nav-link">NEWS</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="shop.html" class="header__nav-link">SHOP</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="ticket.html" class="header__nav-link">TICKETS</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__sub">     
+            <a class="header__sub-link" href=""> 
+                <i class="header__sub-icon fa-solid fa-magnifying-glass"></i> 
+            </a> 
+            <a class="header__sub-link" href="">  
+                <i class="header__sub-icon fa-solid fa-cart-shopping"></i>
+            </a> 
+            <a class="header__sub-link" href=""> 
+                <i class="header__sub-icon far fa-user"></i>
+            </a> 
+            <label class="header__sub-icon header__mobile-nav fa-solid fa-list-ul" for="toggle-nav-mobile"></label>  
+            <input hidden type="checkbox" id="toggle-nav-mobile" class=" header__nav-mobile-btn"> 
+            
+            <ul class="header__nav-mobile-list close-animate-nav">
+                <li class="header__nav-mobile-item">
+                    <a href="index.html" class="header__nav-mobile-item__link">Home</a>
+                </li>
+                <li class="header__nav-mobile-item"> 
+                    <label for="toggle-nav-mobile__squad" class="header__nav-mobile-item__link">  
+                        squads
+                    </label> 
+                    <input hidden type="checkbox" id="toggle-nav-mobile__squad" class="header__nav-mobile-btn__squad"> 
+                    <ul class="header__nav-mobile-list__squad">
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad.html" class="header__nav-mobile-item__link__squad"> 
+                                VN Squads
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-men.html" class="header__nav-mobile-item__link__squad"> 
+                                Men
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-women.html" class="header__nav-mobile-item__link__squad"> 
+                                Women
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-young.html" class="header__nav-mobile-item__link__squad"> 
+                                Young
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-legend.html" class="header__nav-mobile-item__link__squad"> 
+                                Lengend
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-mobile-item">
+                    <a href="news.html" class="header__nav-mobile-item__link">news</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="shop.html" class="header__nav-mobile-item__link">shop</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="ticket.html" class="header__nav-mobile-item__link">tickets</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="contact.html" class="header__nav-mobile-item__link">contact</a>
+                </li>   
+                <i class=""></i>
+                <label for="toggle-nav-mobile" class="header__nav-mobile-list--close fa-solid fa-xmark"></label>
+            </ul> 
+        </div>
+    </div> 
+    <section class="squad-detail"> 
+        <div class="container">
+            <div class="possition">
+                <h3 class="common-squad-heading">GOALKEEPERS</h3> 
+                    <div class="row possition-list"> 
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item"> 
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="possition">
+                <h3 class="common-squad-heading">DEFENDERS</h3> 
+                    <div class="row possition-list"> 
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="possition">
+                <h3 class="common-squad-heading">MIDFIELDERS</h3> 
+                    <div class="row possition-list"> 
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="possition">
+                <h3 class="common-squad-heading">FORWARDS</h3> 
+                    <div class="row possition-list"> 
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <div class="possition-item">
+                                <div class="possition-item__img-wrap">
+                                    <img src="./assets/img/gk-1.jpg" alt="" class="possition-item__img"> 
+                                </div> 
+                                <div class="possition-item__infor">
+                                    <span class="possition-item__infor-number">1</span>  
+                                    <span class="squad-line-break"></span>
+                                    <h3 class="possition-item__infor-first-name">David </h3> 
+                                    <h3 class="possition-item__infor-last-name">De Gea</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+        <div class="footer__socials">
+            <img class="header__nav-logo"  src="./assets/img/logo-vn.png" alt="">    
+            <div class="footer__socials-icon-list">
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div> 
+
+        </div> 
+        <div class="footer__donate">   
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/adidas.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/acecook.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Herbalife-Logo.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/honda.png" alt="">
+            </div>
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/grandsport.jpg" alt="">
+                <img class="footer__donate-img" src="./assets/img/hungthinhcorporation.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/hungthinhland.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/kingcoffe-logo.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/viethan.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/vinamilk.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/yamaha.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/vingroup.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/cadbury.png" alt="">
+            </div>
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/canon.jpg" alt="">
+                <img class="footer__donate-img" src="./assets/img/casillero.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/marriott.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/MauiGim.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/melitta.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Mlily.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/tag.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Visitmalta.png" alt="">
+            </div>
+        </div> 
+        <h3 class="footer__copyright">VIETNAM © 2022 ALL RIGHTS RESERVED</h3>
+    </div>
+</body>
+</html>

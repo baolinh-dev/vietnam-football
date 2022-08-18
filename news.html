@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/x-icon" href="./assets/img/vietnam-flag-logo.png">       
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Slick --> 
+    <link rel="stylesheet" href="./assets/slick/slick.css">
+    <!-- Slick -->  
+    <!-- Shopping cart -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> 
+     <!-- Shopping cart -->
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.2-web/fontawesome-free-6.1.2-web/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.0/css/bootstrap-grid.min.css" integrity="sha512-8zKdCtHHn4yrmrAKteDmaIVUMppsWMTlaZCffpRG6k6sVHwWQ2kiJOFQ22e7dSPc7yYD/GC5onkJCfxemQsyeQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <link rel="stylesheet" href="./assets/style/grid.css">
+    <link rel="stylesheet" href="./assets/style/base.css"> 
+    <link rel="stylesheet" href="./assets/style/responsive.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <title>News</title>
+</head>
+<body>
+    <div class="header"> 
+        <div class="header__nav-wrap"> 
+            <a href="index.html" class="header__nav-logo-link"> 
+                <img class="header__nav-logo"  src="./assets/img/logo-vn.png" alt=""> 
+            </a>
+            <ul class="header__nav">    
+                <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">Home</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="squad.html" class="header__nav-link">VN Squad</a>  
+                    <div class="line-up-wrap">
+                        <ul class="line-up"> 
+                            <li class="line-up__item">
+                                <a href="squad-detail-men.html" class="line-up__item-link">Men</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-women.html" class="line-up__item-link">Women</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-young.html" class="line-up__item-link">Young</a>
+                            </li>
+                            <li class="line-up__item">
+                                <a href="squad-detail-legend.html" class="line-up__item-link">Lengend</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li> 
+                <li class="header__nav-item common-bottom-border-header">
+                    <a href="news.html" class="header__nav-link">NEWS</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="shop.html" class="header__nav-link">SHOP</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="ticket.html" class="header__nav-link">TICKETS</a>
+                </li>
+                <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__sub">     
+            <a class="header__sub-link" href=""> 
+                <i class="header__sub-icon fa-solid fa-magnifying-glass"></i> 
+            </a> 
+            <a class="header__sub-link" href="">  
+                <i class="header__sub-icon fa-solid fa-cart-shopping"></i>
+            </a> 
+            <a class="header__sub-link" href=""> 
+                <i class="header__sub-icon far fa-user"></i>
+            </a> 
+            <label class="header__sub-icon header__mobile-nav fa-solid fa-list-ul" for="toggle-nav-mobile"></label>  
+            <input hidden type="checkbox" id="toggle-nav-mobile" class=" header__nav-mobile-btn"> 
+            
+            <ul class="header__nav-mobile-list close-animate-nav">
+                <li class="header__nav-mobile-item">
+                    <a href="index.html" class="header__nav-mobile-item__link">Home</a>
+                </li>
+                <li class="header__nav-mobile-item"> 
+                    <label for="toggle-nav-mobile__squad" class="header__nav-mobile-item__link">  
+                        squads
+                    </label> 
+                    <input hidden type="checkbox" id="toggle-nav-mobile__squad" class="header__nav-mobile-btn__squad"> 
+                    <ul class="header__nav-mobile-list__squad">
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad.html" class="header__nav-mobile-item__link__squad"> 
+                                VN Squads
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-men.html" class="header__nav-mobile-item__link__squad"> 
+                                Men
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-women.html" class="header__nav-mobile-item__link__squad"> 
+                                Women
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-young.html" class="header__nav-mobile-item__link__squad"> 
+                                Young
+                            </a>
+                        </li>
+                        <li class="header__nav-mobile-item__squad">
+                            <a href="squad-detail-legend.html" class="header__nav-mobile-item__link__squad"> 
+                                Lengend
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="header__nav-mobile-item">
+                    <a href="news.html" class="header__nav-mobile-item__link">news</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="shop.html" class="header__nav-mobile-item__link">shop</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="ticket.html" class="header__nav-mobile-item__link">tickets</a>
+                </li>  
+                <li class="header__nav-mobile-item">
+                    <a href="contact.html" class="header__nav-mobile-item__link">contact</a>
+                </li>   
+                <i class=""></i>
+                <label for="toggle-nav-mobile" class="header__nav-mobile-list--close fa-solid fa-xmark"></label>
+            </ul> 
+        </div>
+    </div>  
+    <section class="news"> 
+        <div class="container mt-5"> 
+            <div class="row">
+                <div class="col-lg-12 mb-3">
+                    <div class="news-football-full-screen news-football-sub" data-aos="fade-right" 
+                    data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out full-width">
+                            <img src="./assets/img/cdv_seagames.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a class="news-football-sub__infor-heading-link" href=""> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Chinese newspaper: Vietnamese football makes history
+                            </h3>   
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+The championship of U23 Vietnam at the 31st SEA Games made a strong impression on the Chinese media.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>  
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <div class="news-football-sub" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/thailand_cry.jpg
+                            " alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link">
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Thai fans are worried about receiving more defeats against in the Asian tournament
+                            </h3>  
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>  
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="news-football-sub" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/hlv_thailand.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Calling many reinforcements from Europe, U23 Thailand wants to surpass U23 Vietnam
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="news-football-sub" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/vn_malaysia.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Comment on the performance of "golden star warriors"
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="news-football-sub" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/dienmao.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Without Coach Park Hang Seo, Vietnam would not have been able to conquer the 31st SEA Games gold medal
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/HLV_hopbao.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Coach Park Hang-seo has only 8 months of contract left, Indonesian newspaper makes a bold proposal
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+Okebola (Indonesia) page has drawn up a special plan for Van Dao football in the near future.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/anhduc_hlv.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Anh Duc is honored to be the 'deputy general' of Coach Park in the Vietnamese team
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+Anh Duc: "Being side by side with the Vietnamese team is an honor and a happiness for me no matter what position I hold. It's pride, responsibility, and duty."
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/hlv_chiatay.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Coach Park had a perfect farewell with U23 Vietnam.
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+With the championship at the 31st SEA Games, the Korean leader had a perfect farewell to U23 Vietnam.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/tienlinh.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Tien Linh: "The injustice" in the 118th minute and the turn that opened the historic trophy
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/dibao.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+The Thai newspaper was surprised with the festive atmosphere on the night that Vietnam U23 won the SEA Games
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-3">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/hlv_indo.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Coach Polking brought Thailand U23 "to the clouds", Mr. Shin Tae-yong directly scolded his students for the red card"
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="row mb-5">
+                <div class="col-lg-4 mb-3">
+                    <div class="news-football-sub" data-aos="fade-right" 
+                    data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/trquoctuan.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a class="news-football-sub__infor-heading-link" href=""> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+The Southeast Asian Football Confederation Council holds an important meeting in Vietnam
+                            </h3>   
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>  
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-football-sub" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/malaysia_vongbang.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link">
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Malaysia aims to beat Thailand and Vietnam, pass the Asian U23 group stage
+                            </h3>  
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>  
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-football-sub" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/nhanto.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Asian experts point out 3 factors that helped Vietnam U23 win gold at the 31st SEA Games
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-6 mb-3">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/anmung.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+U23 Vietnam is bright to beat both Thailand and Malaysia in the Asian tournament
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-6">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/woman.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Determining the future of the coach to bring Vietnam to the Women's World Cup 
+o the Women's World Cu o the Women's World Cu o the Women's World Cu
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-6 mb-3">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/hlv_bye.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Determining the future of the coach to bring Vietnam to the Women's World Cup 
+o the Women's World Cu o the Women's World Cu o the Women's World Cu
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-6">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-right" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/hlv_gold.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Determining the future of the coach to bring Vietnam to the Women's World Cup 
+o the Women's World Cu o the Women's World Cu o the Women's World Cu
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-6 mb-3">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/woman_anmung.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Determining the future of the coach to bring Vietnam to the Women's World Cup 
+o the Women's World Cu o the Women's World Cu o the Women's World Cu
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-6">
+                    <div class="news-football-half news-football-sub horizontal" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/tienlinh_hvc.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Determining the future of the coach to bring Vietnam to the Women's World Cup 
+o the Women's World Cu o the Women's World Cu o the Women's World Cu
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-4">
+                    <div class="news-football-sub" data-aos="fade-right" 
+                    data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/hlv_thailand_tb.jpg
+                            " alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a class="news-football-sub__infor-heading-link" href=""> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Determining the future of the coach to bring Vietnam to the Women's World Cup 
+o the Women's World Cu o the Women's World Cu o the Women's World Cu
+                            </h3>   
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>  
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-football-sub" data-aos="fade-up" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/thailand_team.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link">
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Determining the future of the coach to bring Vietnam to the Women's World Cup 
+o the Women's World Cu o the Women's World Cu o the Women's World Cu
+                            </h3>  
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>  
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="news-football-sub" data-aos="fade-left" data-aos-easing="ease-in" data-aos-duration="1000" data-aos-offset="100"> 
+                        <div class="news-football-sub__img--zoom-out">
+                            <img src="./assets/img/futsal.jpg" alt="" class="news-football-sub__img"> 
+                        </div>
+                        <div class="news-football-sub__infor">
+                        <a href="" class="news-football-sub__infor-heading-link"> 
+                            <h3 class="news-football-sub__infor-heading anchor-main">
+Determining the future of the coach to bring Vietnam to the Women's World Cup 
+o the Women's World Cu o the Women's World Cu o the Women's World Cu
+                            </h3> 
+                        </a>    
+                            <p class="news-football-sub__infor-content"> 
+After days of speculation, the future of the coach who brought Vietnam to the 2023 Women's World Cup has officially been determined.
+                            </p>  
+                            <div class="news-football-sub__infor-time-wrap">
+                                <span class="news-football-sub__infor-time">
+                                    15h | news
+                                </span>   
+                                <i class="fa-solid fa-up-right-from-square news-football-sub__infor-link-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+  
+    </section> 
+    
+    <div class="footer">
+        <div class="footer__socials">
+            <img class="header__nav-logo"  src="./assets/img/logo-vn.png" alt="">    
+            <div class="footer__socials-icon-list">
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="footer__socials-icon">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div> 
+
+        </div> 
+        <div class="footer__donate">   
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/adidas.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/acecook.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Herbalife-Logo.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/honda.png" alt="">
+            </div>
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/grandsport.jpg" alt="">
+                <img class="footer__donate-img" src="./assets/img/hungthinhcorporation.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/hungthinhland.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/kingcoffe-logo.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/viethan.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/vinamilk.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/yamaha.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/vingroup.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/cadbury.png" alt="">
+            </div>
+            <div class="footer__donate-wrap">
+                <img class="footer__donate-img" src="./assets/img/canon.jpg" alt="">
+                <img class="footer__donate-img" src="./assets/img/casillero.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/marriott.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/MauiGim.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/melitta.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Mlily.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/tag.png" alt="">
+                <img class="footer__donate-img" src="./assets/img/Visitmalta.png" alt="">
+            </div>
+        </div> 
+        <h3 class="footer__copyright">VIETNAM © 2022 ALL RIGHTS RESERVED</h3>
+    </div> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="./assets/slick/slick.js"></script>   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
