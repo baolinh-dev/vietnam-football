@@ -314,7 +314,7 @@
 } 
 .home .manager-container{ 
     width: 100%;
-    background-image: url('/assets/img/background-manager.png'); 
+    background-image: url('https://github.com/baolinh-dev/vietnam-football/blob/main/assets/img/background-manager.png?raw=true'); 
     padding-top: 5%;  
     background-repeat: no-repeat;  
     background-position: bottom center;
@@ -517,7 +517,7 @@
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    background-image: url('/assets/img/background-feature.jpg'); 
+    background-image: url('https://github.com/baolinh-dev/vietnam-football/blob/main/assets/img/background-feature.jpg?raw=true'); 
     padding: 40px 102px; 
     overflow: hidden; 
     background-repeat: no-repeat; 
