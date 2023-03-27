@@ -56,7 +56,7 @@ const daysEl = document.getElementById('days');
 const hoursE1 = document.getElementById('hours');
 const minsEl = document.getElementById('minutes');
 const secondsE1 = document.getElementById('seconds'); 
-const newYears = "23 Aug 2022";
+const newYears = "23 Aug 2023";
 function countdown() {
     const newYearsDate = new Date(newYears);
     const currentDate = new Date();
@@ -70,7 +70,14 @@ function countdown() {
     daysEl.innerHTML = formatTime(days);
     hoursE1.innerHTML = formatTime(hours);
     minsEl.innerHTML = formatTime(mins); 
-    secondsE1.innerHTML = formatTime(seconds);
+    secondsE1.innerHTML = formatTime(seconds); 
+    if (totalSeconds < 0) {
+      daysEl.innerHTML = formatTime(0);
+      hoursE1.innerHTML = formatTime(0);
+      minsEl.innerHTML = formatTime(0); 
+      secondsE1.innerHTML = formatTime(0);
+      return; // dừng bộ đếm ngược nếu thời gian đã hết
+    }
 } 
 function formatTime(time) {
     return time < 10 ? (`0${time}`) : time;
